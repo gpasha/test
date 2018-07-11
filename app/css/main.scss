@@ -560,6 +560,7 @@ a{
       align-items: center;
       background: transparent;
       font-family: $font_family_base;
+      color: $color_gray_light;
       font-size: 22px;
       outline:none;
 
@@ -567,6 +568,8 @@ a{
         height: 50px;
         margin-bottom: 50px;
       }
+
+
 
       &:focus{
         outline:2px solid $color_orange;
@@ -590,6 +593,14 @@ a{
           padding: 10px 0 0 35px;
         }
       }
+    }
+
+    input::placeholder {
+      color: $color_gray_light;
+    }
+
+    textarea::placeholder {
+      color: $color_gray_light;
     }
 
     &__btn{

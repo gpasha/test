@@ -15,9 +15,15 @@ window.onload = function () {
 
     var btn = document.querySelector(".form__btn");
     var btnSent = document.querySelector(".form__sending");
+    var inputs = document.querySelectorAll(".form__input");
 
-    btn.onsubmit = function () {
+    btn.onclick = function (e) {
+
+        e.preventDefault();
         btnSent.style.display = "inline";
+        return false
+
     };
+
 
 };

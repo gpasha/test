@@ -434,6 +434,7 @@ a {
   align-items: center;
   background: transparent;
   font-family: "Open Sans", sans-serif;
+  color: #dad6d3;
   font-size: 22px;
   outline: none;
 }
@@ -453,6 +454,30 @@ a {
 .footer .form__input_textarea {
   height: 300px;
   padding: 35px;
+}
+
+.footer .form input::-webkit-input-placeholder {
+  color: #dad6d3;
+}
+
+.footer .form input:-ms-input-placeholder {
+  color: #dad6d3;
+}
+
+.footer .form input::placeholder {
+  color: #dad6d3;
+}
+
+.footer .form textarea::-webkit-input-placeholder {
+  color: #dad6d3;
+}
+
+.footer .form textarea:-ms-input-placeholder {
+  color: #dad6d3;
+}
+
+.footer .form textarea::placeholder {
+  color: #dad6d3;
 }
 
 .footer .form__btn {

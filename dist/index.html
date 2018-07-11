@@ -121,11 +121,11 @@
                     Some text Some text Some text Some text
                 </div>
             </div>
-            <form class="form" name="form" method="post">
+            <form class="form" name="form" >
                 <input class="form__input" name="form-name" placeholder="Name" type="text" required>
-                <input class="form__input" name="form-email" placeholder="Email" type="email" required>
-                <input class="form__input" name="form-phone" placeholder="Phone" type="tel" required>
-                <textarea class="form__input form__input_textarea" name="form-textarea" placeholder="Message" type="text" required></textarea>
+                <input class="form__input" name="form-email" placeholder="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                <input class="form__input" name="form-phone" placeholder="Phone" type="number"  required>
+                <textarea class="form__input form__input_textarea" name="form-textarea" placeholder="Message" type="text" minlength="6" required></textarea>
                 <button class="form__btn" name="form-btn">SEND MESSAGE</button>
                 <span class="form__sending">Sending ...</span>
             </form>
